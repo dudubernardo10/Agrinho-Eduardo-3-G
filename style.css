@@ -1,0 +1,278 @@
+
+:root {
+  --cor-de-fundo: #307197;
+  --verde: hsl(182, 70%, 45%);
+  --branco: #ffffff;
+  --botao-ativo: #00c1f1;
+  --botao-inativo: rgba(7, 85, 95, 0.5);
+  --texto-fundo: rgba(19, 185, 190, 0.3);
+}
+
+
+
+
+
+
+
+
+body {
+  background: #129e35 url("https://s2-g1.glbimg.com/1P69jConFj6DuqPKHUQSWiGt3B4=/0x0:640x360/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/5/8/a907BVQZmIR1lYFS2IXA/11764097-640x360.jpg") no-repeat center top fixed;
+  background-size:cover;
+  background-color: var(--cor-de-fundo);
+  color: var(--branco);
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.conteudo-principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+.titulo-principal {
+  text-align: left;
+  width: 100%;
+  font-size: 32px;
+}
+
+
+
+
+
+
+
+
+.titulo-principal span {
+  color: var(--verde);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.botao {
+  font-family: 'Chakra Petch', sans-serif;
+  background-color: var(--botao-inativo);
+  color: var(--branco);
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  font-size: 18px;
+  align-items: center;
+  width: 100%;
+  border-bottom: 4px solid var(--botao-ativo);
+  border-left: 2px solid var(--botao-ativo);
+  border-right: 2px solid var(--botao-ativo);
+  border-top: none;
+}
+
+
+
+
+
+
+
+
+.botao:first-child {
+  border-radius: 40px 40px 0 0;
+}
+
+
+
+
+
+
+
+
+.botoes {
+  display: block;
+}
+
+
+
+
+
+
+
+
+.botao.ativo{
+  background-color: var(--botao-ativo);
+  border-bottom: 4px solid var(--verde);
+}
+
+
+
+
+
+
+
+
+.abas-textos{
+  background-color: var(--texto-fundo);
+  padding: 40px;
+  border-radius: 0 0 40px 40px;
+}
+.aba-conteudo.ativo{
+  display:block;
+}
+
+
+
+
+
+
+
+
+.aba-conteudo{
+  display: none;
+}
+
+
+
+
+
+
+
+
+.aba-conteudo-titulo-principal{
+  font-size: 28px;
+  text-align: center;
+}
+.aba-conteudo-titulo-secundario{
+  text-align: center;
+  color: var(--verde);
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+.contador{
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.contador-digito{
+  padding: 0 16px;
+  text-align: center;
+  min-width: 100px;
+}
+
+
+
+
+
+
+
+
+.contador-digito-numero{
+  font-size: 80px;
+  margin: 0;
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+.contador-digito-texto{
+  color: var(--verde);
+  font-size: 20px;
+  margin: 0;
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+  .botoes {
+      display: flex;
+  }
+
+
+
+
+
+
+
+
+  .botao:first-child {
+      border-radius: 40px 0 0 0;
+  }
+
+
+
+
+
+
+
+
+  .botao:last-child {
+      border-radius: 0 40px 0 0;
+  }
+}
+
+
+
+
